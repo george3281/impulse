@@ -1,0 +1,43 @@
+{
+  "customer": { "first_name": "Maya", "last_name": "Chen", "street_number": "77", "street_name": "Fearing St" },
+  "account": { "nickname": "Maya Checking", "balance": 3200 },
+  "merchants": {
+    "Sephora": "beauty",
+    "Shein": "online shopping",
+    "Amazon": "online shopping",
+    "Zara": "clothing",
+    "Starbucks": "coffee",
+    "Dunkin": "coffee",
+    "Lyft": "rideshare",
+    "Spotify": "subscription",
+    "Puffton Village Rentals": "rent",
+    "Trader Joe's": "groceries"
+  },
+  "purchases": [
+    ["Sephora", "2026-10-17", "23:15", 64.00, "order"],
+    ["Sephora", "2026-10-29", "00:40", 48.50, "order"],
+    ["Sephora", "2026-11-09", "22:55", 72.00, "order"],
+    ["Shein", "2026-10-19", "01:20", 38.40, "haul"],
+    ["Shein", "2026-10-27", "23:05", 52.75, "haul"],
+    ["Shein", "2026-11-04", "22:30", 41.10, "haul"],
+    ["Shein", "2026-11-12", "00:10", 47.95, "haul"],
+    ["Amazon", "2026-10-21", "21:45", 29.99, "order"],
+    ["Amazon", "2026-11-02", "23:30", 34.50, "order"],
+    ["Amazon", "2026-11-11", "20:15", 19.99, "order"],
+    ["Zara", "2026-10-25", "15:20", 79.90, "in store"],
+    ["Zara", "2026-11-08", "16:05", 59.90, "in store"],
+    ["Starbucks", "2026-10-18", "08:40", 6.45, "coffee"],
+    ["Starbucks", "2026-10-24", "09:10", 7.25, "coffee"],
+    ["Starbucks", "2026-11-01", "08:55", 6.95, "coffee"],
+    ["Starbucks", "2026-11-07", "10:20", 7.45, "coffee"],
+    ["Starbucks", "2026-11-13", "08:30", 6.75, "coffee"],
+    ["Dunkin", "2026-10-22", "07:50", 4.80, "coffee"],
+    ["Dunkin", "2026-11-05", "07:35", 5.10, "coffee"],
+    ["Lyft", "2026-10-26", "01:15", 16.40, "ride"],
+    ["Lyft", "2026-11-09", "02:05", 18.20, "ride"],
+    ["Spotify", "2026-11-01", "06:00", 11.99, "monthly subscription"],
+    ["Puffton Village Rentals", "2026-11-01", "09:00", 950.00, "November rent"],
+    ["Trader Joe's", "2026-10-20", "18:10", 58.30, "groceries"],
+    ["Trader Joe's", "2026-11-03", "17:45", 64.20, "groceries"]
+  ]
+}

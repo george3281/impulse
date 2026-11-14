@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loopr - Home</title>
+<style>
+  :root { --bg:#f4f5f7; --card:#fff; --ink:#16181d; --muted:#5d6370; --line:#e3e5ea; --brand:#5b4bdb; --spon:#8a5a00; --sponbg:#fff4d6; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  header { position:sticky; top:0; z-index:5; display:flex; align-items:center; gap:16px; padding:10px 16px; background:var(--card); border-bottom:1px solid var(--line); }
+  .logo { display:flex; align-items:center; gap:8px; font-weight:800; font-size:20px; color:var(--brand); text-decoration:none; }
+  .search { flex:1; max-width:520px; padding:8px 14px; border:1px solid var(--line); border-radius:999px; background:var(--bg); font:inherit; }
+  .avatar { width:32px; height:32px; border-radius:50%; background:linear-gradient(135deg,#5b4bdb,#2bb3a3); flex:none; }
+  main { max-width:1180px; margin:0 auto; padding:20px 16px 40px; }
+  .chips { display:flex; gap:8px; overflow-x:auto; margin-bottom:18px; }
+  .chips span { padding:6px 12px; border-radius:999px; background:var(--card); border:1px solid var(--line); white-space:nowrap; font-size:14px; }
+  .chips span:first-child { background:var(--ink); color:#fff; }
+  .feed { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:18px; }
+  article { background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; }
+  article a { color:inherit; text-decoration:none; }
+  .thumb { position:relative; aspect-ratio:16/9; display:block; }
+  .thumb svg { width:100%; height:100%; display:block; }
+  .dur { position:absolute; right:8px; bottom:8px; background:rgba(0,0,0,.78); color:#fff; font-size:12px; padding:1px 6px; border-radius:4px; }
+  .body { padding:12px 14px 14px; display:flex; flex-direction:column; gap:6px; flex:1; }
+  h2 { margin:0; font-size:16px; line-height:1.3; }
+  .meta { color:var(--muted); font-size:13px; }
+  p { margin:0; font-size:14px; color:#2c3038; }
+  .sponsored { align-self:flex-start; font-size:12px; font-weight:700; color:var(--spon); background:var(--sponbg); padding:2px 8px; border-radius:4px; }
+  .cta { margin-top:auto; align-self:flex-start; padding:8px 14px; border-radius:8px; background:var(--ink); color:#fff !important; font-weight:600; font-size:14px; }
+  .code { font-family:ui-monospace,Menlo,monospace; border:2px dashed #e0442f; padding:2px 8px; border-radius:6px; font-weight:700; }
+  details { position:fixed; right:12px; bottom:12px; max-width:300px; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:6px 12px; font-size:13px; opacity:.6; z-index:10; }
+  details[open] { opacity:1; box-shadow:0 6px 24px rgba(0,0,0,.15); }
+  details ul { padding-left:18px; margin:6px 0; }
+  @media (max-width:600px) { .search { display:none; } header { justify-content:space-between; } }
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#" aria-label="Loopr home">
+    <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12" fill="none" stroke="#5b4bdb" stroke-width="4"/><circle cx="14" cy="14" r="4" fill="#2bb3a3"/></svg>
+    Loopr
+  </a>
+  <input class="search" type="search" placeholder="Search Loopr" aria-label="Search">
+  <div class="avatar" role="img" aria-label="Your profile"></div>
+</header>
+
+<main>
+  <nav class="chips" aria-label="Topics">
+    <span>For you</span><span>Food</span><span>Fitness</span><span>Study</span><span>Gaming</span><span>Animals</span><span>Late night</span>
+  </nav>
+
+  <section class="feed" aria-label="Feed">
+
+    <!-- TARGET AD 1: DoorDash -->
+    <article data-impulse-candidate>
+      <a class="thumb" href="https://www.doordash.com/">
+        <svg viewBox="0 0 160 90" role="img" aria-label="Pizza, fries and a drink delivered to your door"><rect width="160" height="90" fill="#ff3008"/><circle cx="50" cy="48" r="26" fill="#ffc94a"/><circle cx="42" cy="40" r="4" fill="#c0392b"/><circle cx="58" cy="52" r="4" fill="#c0392b"/><circle cx="46" cy="58" r="4" fill="#c0392b"/><rect x="92" y="30" width="22" height="34" rx="3" fill="#fff"/><rect x="120" y="26" width="18" height="38" rx="3" fill="#ffe08a"/><text x="80" y="82" fill="#fff" font-size="8" font-weight="700" text-anchor="middle" font-family="sans-serif">$0 DELIVERY FEE</text></svg>
+      </a>
+      <div class="body">
+        <span class="sponsored">Sponsored</span>
+        <h2>Hungry? Your favorites, delivered in 30 min</h2>
+        <p>Order now - $0 delivery fee on DoorDash for your first order. Pizza, wings, burgers and more from restaurants near you.</p>
+        <span class="meta">DoorDash - Promoted</span>
+        <a class="cta" href="https://www.doordash.com/">Order now</a>
+      </div>
+    </article>
+
+    <!-- NORMAL 1: recipe -->
+    <article data-impulse-candidate>
+      <a class="thumb" href="#watch-garlic-noodles">
+        <svg viewBox="0 0 160 90" role="img" aria-label="Bowl of garlic noodles on a kitchen counter"><rect width="160" height="90" fill="#f3e9d8"/><ellipse cx="80" cy="56" rx="44" ry="20" fill="#fff" stroke="#d8c7a8" stroke-width="2"/><path d="M50 52 q10 -10 20 0 t20 0 t20 0" stroke="#e8b84a" stroke-width="4" fill="none"/><path d="M54 58 q10 -8 20 0 t20 0 t18 0" stroke="#f0c75e" stroke-width="4" fill="none"/><circle cx="70" cy="50" r="2" fill="#4c8a3a"/><circle cx="92" cy="55" r="2" fill="#4c8a3a"/></svg>
+        <span class="dur">8:42</span>
+      </a>
+      <div class="body">
+        <h2>15-minute garlic noodles at home</h2>
+        <p>Butter, lots of garlic, oyster sauce and parmesan. Pantry staples, one pan, ready in 15 minutes. Full ingredient list in the description.</p>
+        <span class="meta">Mei Cooks - 412K views - 3 days ago</span>
+      </div>
+    </article>
+
+    <!-- TARGET AD 2: Uber Eats promo code -->
+    <article data-impulse-candidate>
+      <a class="thumb" href="https://www.ubereats.com/">
+        <svg viewBox="0 0 160 90" role="img" aria-label="Uber Eats promo: 40 percent off your next order"><rect width="160" height="90" fill="#06c167"/><rect x="18" y="18" width="124" height="54" rx="8" fill="#fff"/><text x="80" y="44" fill="#142328" font-size="18" font-weight="800" text-anchor="middle" font-family="sans-serif">40% OFF</text><text x="80" y="62" fill="#142328" font-size="9" text-anchor="middle" font-family="sans-serif">your next 3 orders</text></svg>
+      </a>
+      <div class="body">
+        <span class="sponsored">Sponsored</span>
+        <h2>Late-night cravings? 40% off your next 3 Uber Eats orders</h2>
+        <p>Use code <span class="code">NIGHTOWL40</span> at checkout. Valid on food delivery from 10 PM to 4 AM. Max $15 off per order.</p>
+        <span class="meta">Uber Eats - Promoted</span>
+        <a class="cta" href="https://www.ubereats.com/">Claim promo</a>
+      </div>
+    </article>
+
+    <!-- NORMAL 2: study vlog -->
+    <article data-impulse-candidate>
+      <a class="thumb" href="#watch-study-vlog">
+        <svg viewBox="0 0 160 90" role="img" aria-label="Desk with a laptop and a desk lamp at night"><rect width="160" height="90" fill="#26304a"/><rect x="0" y="62" width="160" height="28" fill="#5a4636"/><rect x="52" y="34" width="56" height="30" rx="3" fill="#9fb4d8"/><rect x="44" y="62" width="72" height="4" fill="#c9d2e3"/><path d="M128 62 v-26 l-12 -10" stroke="#ddd" stroke-width="3" fill="none"/><polygon points="108,22 124,22 116,34" fill="#ffd36b"/></svg>
+        <span class="dur">22:15</span>
+      </a>
+      <div class="body">
+        <h2>Study with me: 6 hours before my algorithms final</h2>
+        <p>Pomodoro timer on screen, lofi in the background, 50/10 sessions. Good luck on finals everyone.</p>
+        <span class="meta">nina studies - 88K views - 1 week ago</span>
+      </div>
+    </article>
+
+    <!-- NON-TARGET AD 1: sneakers -->
+    <article data-impulse-candidate>
+      <a class="thumb" href="https://www.stridelabshoes.com/sale">
+        <svg viewBox="0 0 160 90" role="img" aria-label="Running sneaker on a blue background"><rect width="160" height="90" fill="#2d6cdf"/><path d="M30 60 q10 -26 36 -22 l26 10 q30 6 40 14 v6 h-102 z" fill="#fff"/><rect x="30" y="64" width="102" height="6" fill="#ff7a59"/><text x="80" y="22" fill="#fff" font-size="12" font-weight="800" text-anchor="middle" font-family="sans-serif">30% OFF</text></svg>
+      </a>
+      <div class="body">
+        <span class="sponsored">Sponsored</span>
+        <h2>Stride Lab running shoes - 30% off this weekend</h2>
+        <p>Lightweight trainers built for daily miles. Free shipping and free returns. Sale ends Sunday.</p>
+        <span class="meta">Stride Lab - Promoted</span>
+        <a class="cta" href="https://www.stridelabshoes.com/sale">Shop the sale</a>
+      </div>
+    </article>
+
+    <!-- TARGET AD 3: burger combo banner -->
+    <article data-impulse-candidate>
+      <a class="thumb" href="https://www.mcdonalds.com/us/en-us/deals.html">
+        <svg viewBox="0 0 160 90" role="img" aria-label="Double cheeseburger combo with fries and a soda"><rect width="160" height="90" fill="#ffbc0d"/><ellipse cx="62" cy="34" rx="30" ry="12" fill="#c8791f"/><rect x="32" y="40" width="60" height="6" fill="#5a2d0c"/><rect x="30" y="46" width="64" height="4" fill="#ffd84d"/><rect x="32" y="50" width="60" height="6" fill="#5a2d0c"/><rect x="34" y="56" width="56" height="8" rx="3" fill="#c8791f"/><rect x="106" y="38" width="20" height="28" fill="#db0007"/><rect x="108" y="30" width="3" height="10" fill="#ffd84d"/><rect x="113" y="28" width="3" height="12" fill="#ffd84d"/><rect x="118" y="30" width="3" height="10" fill="#ffd84d"/><text x="80" y="84" fill="#db0007" font-size="10" font-weight="800" text-anchor="middle" font-family="sans-serif">COMBO $5.99</text></svg>
+      </a>
+      <div class="body">
+        <span class="sponsored">Sponsored</span>
+        <h2>Double cheeseburger combo - just $5.99</h2>
+        <p>Burger, medium fries and a drink. Open late at a McDonald's near you. Order ahead in the app or get it delivered.</p>
+        <span class="meta">McDonald's - Promoted</span>
+        <a class="cta" href="https://www.mcdonalds.com/us/en-us/deals.html">Get the deal</a>
+      </div>
+    </article>
+
+    <!-- NORMAL 3: restaurant review -->
+    <article data-impulse-candidate>
+      <a class="thumb" href="#watch-ramen-review">
+        <svg viewBox="0 0 160 90" role="img" aria-label="Bowl of ramen with an egg and scallions"><rect width="160" height="90" fill="#2b2b2b"/><path d="M36 44 h88 a44 30 0 0 1 -88 0 z" fill="#b5462f"/><ellipse cx="80" cy="44" rx="44" ry="8" fill="#e8a65a"/><ellipse cx="96" cy="43" rx="9" ry="5" fill="#fff"/><circle cx="96" cy="43" r="3" fill="#f2a900"/><path d="M60 42 q6 -6 12 0 t12 0" stroke="#f5e1a4" stroke-width="3" fill="none"/><circle cx="70" cy="40" r="2" fill="#5fae4e"/></svg>
+        <span class="dur">11:03</span>
+      </a>
+      <div class="body">
+        <h2>Honest review: is the new ramen spot in Amherst worth the hype?</h2>
+        <p>Rich tonkotsu broth, noodles a little soft. 7.5/10. I paid for my own bowl.</p>
+        <span class="meta">Valley Eats - 21K views - 5 days ago</span>
+      </div>
+    </article>
+
+    <!-- TARGET AD 4: late night mukbang -->
+    <article data-impulse-candidate>
+      <a class="thumb" href="https://www.doordash.com/promo/late-night">
+        <svg viewBox="0 0 160 90" role="img" aria-label="Table stacked with ten burgers for a mukbang"><rect width="160" height="90" fill="#1d1033"/><g fill="#c8791f"><ellipse cx="30" cy="40" rx="12" ry="6"/><ellipse cx="58" cy="40" rx="12" ry="6"/><ellipse cx="86" cy="40" rx="12" ry="6"/><ellipse cx="114" cy="40" rx="12" ry="6"/><ellipse cx="142" cy="40" rx="12" ry="6"/><ellipse cx="44" cy="62" rx="12" ry="6"/><ellipse cx="72" cy="62" rx="12" ry="6"/><ellipse cx="100" cy="62" rx="12" ry="6"/><ellipse cx="128" cy="62" rx="12" ry="6"/><ellipse cx="16" cy="62" rx="12" ry="6"/></g><g fill="#5a2d0c"><rect x="18" y="44" width="24" height="4"/><rect x="46" y="44" width="24" height="4"/><rect x="74" y="44" width="24" height="4"/><rect x="102" y="44" width="24" height="4"/><rect x="130" y="44" width="24" height="4"/><rect x="32" y="66" width="24" height="4"/><rect x="60" y="66" width="24" height="4"/><rect x="88" y="66" width="24" height="4"/><rect x="116" y="66" width="24" height="4"/><rect x="4" y="66" width="24" height="4"/></g><text x="80" y="18" fill="#ff5fa2" font-size="10" font-weight="800" text-anchor="middle" font-family="sans-serif">10 BURGER MUKBANG</text></svg>
+        <span class="dur">18:27</span>
+      </a>
+      <div class="body">
+        <span class="sponsored">Sponsored</span>
+        <h2>Late night mukbang - 10 burgers at 2 AM</h2>
+        <p>Eating 10 double cheeseburgers and 4 large fries in one sitting. Craving it now? Get the same order delivered tonight - link below, code MUKBANG for $10 off.</p>
+        <span class="meta">BigBiteBoyz x DoorDash - Paid partnership</span>
+        <a class="cta" href="https://www.doordash.com/promo/late-night">Get it delivered</a>
+      </div>
+    </article>
+
+    <!-- NORMAL 4: running -->
+    <article data-impulse-candidate>
+      <a class="thumb" href="#watch-first-marathon">
+        <svg viewBox="0 0 160 90" role="img" aria-label="Runner on a road at sunrise"><rect width="160" height="90" fill="#ffd9b0"/><circle cx="120" cy="40" r="16" fill="#ff9b54"/><polygon points="0,90 80,50 160,90" fill="#8a8f99"/><path d="M80 54 v36" stroke="#fff" stroke-width="2" stroke-dasharray="4 4"/><circle cx="62" cy="36" r="4" fill="#222"/><path d="M62 40 l-2 12 l-6 8 M60 52 l6 8 M62 44 l-8 4 M62 44 l7 -2" stroke="#222" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+        <span class="dur">14:50</span>
+      </a>
+      <div class="body">
+        <h2>I ran my first marathon - what 16 weeks of training actually looked like</h2>
+        <p>Long runs, the week 12 injury scare, and pacing the last 10K. Splits in the pinned comment.</p>
+        <span class="meta">Miles with Sam - 156K views - 2 weeks ago</span>
+      </div>
+    </article>
+
+    <!-- NON-TARGET AD 2: game sale -->
+    <article data-impulse-candidate>
+      <a class="thumb" href="https://store.pixelforge.games/sale">
+        <svg viewBox="0 0 160 90" role="img" aria-label="Game controller with a sale banner"><rect width="160" height="90" fill="#121a2e"/><rect x="44" y="36" width="72" height="30" rx="15" fill="#7b5cff"/><rect x="58" y="47" width="12" height="4" fill="#fff"/><rect x="62" y="43" width="4" height="12" fill="#fff"/><circle cx="96" cy="46" r="3" fill="#2bd9a3"/><circle cx="104" cy="52" r="3" fill="#ff5f7a"/><text x="80" y="24" fill="#2bd9a3" font-size="11" font-weight="800" text-anchor="middle" font-family="sans-serif">WINTER SALE -60%</text></svg>
+      </a>
+      <div class="body">
+        <span class="sponsored">Sponsored</span>
+        <h2>Starfall Odyssey - 60% off in the PixelForge winter sale</h2>
+        <p>The open-world space RPG everyone is talking about. Buy now for $23.99 and get the soundtrack free.</p>
+        <span class="meta">PixelForge Store - Promoted</span>
+        <a class="cta" href="https://store.pixelforge.games/sale">Buy now</a>
+      </div>
+    </article>
+
+    <!-- NORMAL 5: cat -->
+    <article data-impulse-candidate>
+      <a class="thumb" href="#watch-cat">
+        <svg viewBox="0 0 160 90" role="img" aria-label="Orange cat peeking out of a cardboard box"><rect width="160" height="90" fill="#cfe6f2"/><rect x="44" y="50" width="72" height="40" fill="#c69a64"/><polygon points="44,50 30,40 58,40 72,50" fill="#b5864f"/><circle cx="80" cy="44" r="18" fill="#f2a24a"/><polygon points="66,34 70,18 78,30" fill="#f2a24a"/><polygon points="94,34 90,18 82,30" fill="#f2a24a"/><circle cx="74" cy="42" r="3" fill="#222"/><circle cx="86" cy="42" r="3" fill="#222"/><polygon points="78,48 82,48 80,51" fill="#e06a7a"/></svg>
+        <span class="dur">0:58</span>
+      </a>
+      <div class="body">
+        <h2>My cat vs. the new cardboard box (he lost)</h2>
+        <p>Biscuit spent 40 minutes trying to fit into a box two sizes too small. Sound on.</p>
+        <span class="meta">biscuit the cat - 2.1M views - 1 day ago</span>
+      </div>
+    </article>
+
+    <!-- TARGET 6: organic craving content, no ad marker - blurred because it's a food trigger -->
+    <article data-impulse-candidate>
+      <a class="thumb" href="#watch-taco">
+        <svg viewBox="0 0 160 90" role="img" aria-label="A table covered in tacos, burritos and nachos"><rect width="160" height="90" fill="#3b2a6b"/><path d="M20 70 q20 -30 40 0 z" fill="#f4c34a"/><path d="M60 72 q20 -30 40 0 z" fill="#f4c34a"/><path d="M100 70 q20 -30 40 0 z" fill="#f4c34a"/><rect x="30" y="22" width="44" height="16" rx="8" fill="#e9d7b0"/><circle cx="112" cy="30" r="12" fill="#f0a830"/><text x="80" y="86" font-size="9" fill="#fff" text-anchor="middle" font-family="sans-serif">I ATE IT ALL</text></svg>
+        <span class="dur">24:10</span>
+      </a>
+      <div class="body">
+        <h2>I tried every item on the Taco Bell menu at 1 AM</h2>
+        <p>All 38 items, ranked. The Crunchwrap is still undefeated. Part 2 tomorrow.</p>
+        <span class="meta">midnight eats - 3.4M views - 2 days ago</span>
+      </div>
+    </article>
+
+    <!-- TARGET AD 5: second DoorDash-style banner, fast food -->
+    <article data-impulse-candidate>
+      <a class="thumb" href="https://www.ubereats.com/category/fast-food">
+        <svg viewBox="0 0 160 90" role="img" aria-label="Fried chicken bucket and fries with a delivery scooter"><rect width="160" height="90" fill="#142328"/><path d="M40 40 h40 l-6 36 h-28 z" fill="#e23b2e"/><rect x="40" y="34" width="40" height="8" fill="#fff"/><circle cx="50" cy="30" r="8" fill="#c8791f"/><circle cx="66" cy="28" r="9" fill="#d98a2b"/><rect x="96" y="56" width="40" height="10" rx="5" fill="#06c167"/><circle cx="102" cy="70" r="6" fill="#ddd"/><circle cx="130" cy="70" r="6" fill="#ddd"/><rect x="112" y="40" width="16" height="16" fill="#06c167"/></svg>
+      </a>
+      <div class="body">
+        <span class="sponsored">Sponsored</span>
+        <h2>Fried chicken at your door by midnight</h2>
+        <p>Buckets, sandwiches and fries from fast food spots that stay open late. Delivery in under 25 minutes on Uber Eats.</p>
+        <span class="meta">Uber Eats - Promoted</span>
+        <a class="cta" href="https://www.ubereats.com/category/fast-food">Order delivery</a>
+      </div>
+    </article>
+
+  </section>
+</main>
+
+<details>
+  <summary>Presenter key</summary>
+  <p><strong>Should blur</strong> (blocking Food: ads and craving content):</p>
+  <ul>
+    <li>DoorDash "$0 delivery fee"</li>
+    <li>Uber Eats NIGHTOWL40 promo</li>
+    <li>$5.99 burger combo</li>
+    <li>10 burger mukbang</li>
+    <li>Fried chicken by midnight</li>
+    <li>"I tried every item on the Taco Bell menu" (not an ad - craving content)</li>
+    <li>Ramen spot review (restaurant reviews push you to go buy)</li>
+  </ul>
+  <p><strong>Should stay visible:</strong> garlic noodles recipe (make-it-yourself stays visible), study vlog, marathon video, cat video, sneaker ad, game sale ad.</p>
+</details>
+</body>
+</html>

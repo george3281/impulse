@@ -1,0 +1,16 @@
+{
+  "customerId": "03c3b2d5-b8af-47ec-9f02-6aa3b191e03f",
+  "accountId": "17815c0e-8e39-4778-9f85-a70d17d5dc53",
+  "merchants": {
+    "DoorDash": "874b5521-639e-4c94-987e-c912ba91c3ac",
+    "Uber Eats": "68a14f3a-0e49-4d74-a97b-1e603fc4c848",
+    "McDonald's": "2ddc23b0-8deb-41b5-9fdd-c267abbfb721",
+    "Amazon": "58786db3-b784-4139-a11d-37e3eeb269b4",
+    "Starbucks": "1afe3847-0506-48a5-b441-8b5e8b82ed54",
+    "Steam": "95977f55-a812-4d9c-aed3-89cb433fd7ea",
+    "Uber": "313c20f6-daed-4199-940f-1c1f98249868",
+    "Netflix": "3aee2219-a5da-49c2-9595-63d15a2349de",
+    "Puffton Village Rentals": "4dc83859-a0d3-4132-b97a-b38b3d874d50",
+    "Big Y": "f93d2555-b5f3-4864-b03d-558e71177a3c"
+  }
+}

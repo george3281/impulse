@@ -1,0 +1,16 @@
+{
+  "customerId": "c172ea1a-bd84-4004-b5d1-3d5bc62c7974",
+  "accountId": "c75d3b14-d3aa-4afe-8206-cafbe2f7540d",
+  "merchants": {
+    "Sephora": "c62489a4-bc58-4d36-befc-52cf3bd6923a",
+    "Shein": "ba3779d0-0285-491b-b06c-459cb2070398",
+    "Amazon": "b9b3361c-4ae5-494d-a37e-f615985823d6",
+    "Zara": "efb333c0-9952-457f-97e3-f0d583a38324",
+    "Starbucks": "802de403-0a32-424f-98f2-5fe6de3a94dd",
+    "Dunkin": "ed8c26e9-0df5-49b9-a84b-977cc8d89b66",
+    "Lyft": "9095fb73-56c6-43b5-8845-a07a23600a81",
+    "Spotify": "95c997be-6b7b-4d3e-9e1d-80d5d3effd09",
+    "Puffton Village Rentals": "27acb37d-2d23-48c4-90a9-6f242730457e",
+    "Trader Joe's": "0ddf54c5-f926-4857-a0cb-f79a1b71dfa4"
+  }
+}

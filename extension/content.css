@@ -1,0 +1,88 @@
+/* Impulse overlay. Every rule is ss- namespaced so host pages are untouched.
+   An Opal-style friction screen: one fact at display size, one dry line, one quiet way out. */
+.ss-relative { position: relative !important; }
+.ss-blurred { min-height: 128px !important; overflow: hidden !important; isolation: isolate !important; } /* own stacking context: the overlay's z-index can't climb over site modals */
+.ss-blurred > :not(.ss-overlay) {
+  filter: blur(14px) !important;
+  pointer-events: none !important;
+  user-select: none !important;
+}
+.ss-overlay {
+  all: initial;
+  --ss-scrim: rgba(250, 250, 251, 0.84);
+  --ss-ink: #1b1b1f;
+  --ss-muted: #4f4f58;   /* 7:1 on the scrim */
+  --ss-line: #d6d6db;
+  --ss-edge: #b9b9c0;
+  --ss-focus: #0b57d0;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 2147483000 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  padding: 16px !important;
+  box-sizing: border-box !important;
+  background: var(--ss-scrim) !important;
+  color: var(--ss-ink) !important;
+  font: 400 13px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  text-align: center !important;
+  container-type: size !important; /* lets the copy compact itself on small thumbnails */
+  /* Fades in when a post gets blurred (~1s after load) so it doesn't pop. Opacity only: fine under reduced motion. */
+  transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1) !important; /* deliberately unhurried, per owner */
+}
+@media (prefers-color-scheme: dark) {
+  .ss-overlay { --ss-scrim: rgba(24, 24, 27, 0.82); --ss-ink: #f2f2f4; --ss-muted: #b4b4bd; --ss-line: #45454d; --ss-edge: #5c5c66; --ss-focus: #8ab4f8; }
+}
+@starting-style { .ss-overlay { opacity: 0 !important; } }
+.ss-num {
+  all: unset;
+  display: block !important;
+  color: var(--ss-ink) !important;
+  font: 600 20px/1.2 system-ui, -apple-system, "Segoe UI", sans-serif !important;
+  letter-spacing: -0.02em !important;
+  font-variant-numeric: tabular-nums !important;
+}
+.ss-text {
+  all: unset;
+  display: block !important;
+  max-width: 30em !important;
+  color: var(--ss-muted) !important;
+  font: inherit !important;
+  text-wrap: balance !important;
+}
+.ss-btn {
+  all: unset;
+  margin-top: 8px !important;
+  cursor: pointer !important;
+  padding: 5px 14px !important;
+  border-radius: 6px !important;
+  border: 1px solid var(--ss-line) !important;
+  border-bottom: 2px solid var(--ss-edge) !important; /* a quiet edge instead of a shadow */
+  background: transparent !important; /* same as the overlay: friction, not an invitation */
+  color: var(--ss-muted) !important;
+  font: 400 12px/1.2 system-ui, -apple-system, "Segoe UI", sans-serif !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+@media (hover: hover) {
+  .ss-btn:hover { color: var(--ss-ink) !important; border-bottom-color: var(--ss-muted) !important; }
+}
+.ss-btn:focus-visible { outline: 2px solid var(--ss-focus) !important; outline-offset: 2px !important; }
+@media (prefers-reduced-motion: no-preference) {
+  /* Blur eases in with the overlay instead of snapping; press feedback on the button. */
+  .ss-blurred > :not(.ss-overlay) { transition: filter 500ms cubic-bezier(0.23, 1, 0.32, 1) !important; }
+  .ss-btn { transition: scale 150ms cubic-bezier(0.23, 1, 0.32, 1) !important; }
+  .ss-btn:active { scale: 0.96 !important; }
+}
+.ss-ask { display: block !important; margin-top: 2px !important; }
+.ss-ib { display: inline-block !important; }
+/* Small hosts (grid thumbnails, sidebar cards): keep the number, drop the details, tighten the button. */
+@container (max-width: 220px) {
+  .ss-num { font-size: 16px !important; }
+  .ss-text { font-size: 12px !important; line-height: 1.35 !important; }
+  .ss-ask { display: none !important; }
+  .ss-btn { margin-top: 4px !important; padding: 4px 10px !important; font-size: 12px !important; }
+}

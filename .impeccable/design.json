@@ -1,0 +1,623 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-14T21:19:36.884Z",
+  "title": "Design System: Impulse",
+  "extensions": {
+    "colorMeta": {
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "well": {
+        "role": "neutral",
+        "displayName": "Well",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Text",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "track": {
+        "role": "neutral",
+        "displayName": "Track",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "bar": {
+        "role": "neutral",
+        "displayName": "Bar",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "switch-off": {
+        "role": "neutral",
+        "displayName": "Switch Off",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Icon Teal",
+        "tonalRamp": [
+          "oklch(15% 0.045 185)",
+          "oklch(25% 0.090 185)",
+          "oklch(35% 0.090 185)",
+          "oklch(45% 0.090 185)",
+          "oklch(55% 0.090 185)",
+          "oklch(65% 0.090 185)",
+          "oklch(80% 0.090 185)",
+          "oklch(95% 0.045 185)"
+        ]
+      },
+      "accent-ink": {
+        "role": "primary",
+        "displayName": "Teal Ink",
+        "tonalRamp": [
+          "oklch(15% 0.045 185)",
+          "oklch(25% 0.090 185)",
+          "oklch(35% 0.090 185)",
+          "oklch(45% 0.090 185)",
+          "oklch(55% 0.090 185)",
+          "oklch(65% 0.090 185)",
+          "oklch(80% 0.090 185)",
+          "oklch(95% 0.045 185)"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus Blue",
+        "tonalRamp": [
+          "oklch(15% 0.075 262)",
+          "oklch(25% 0.150 262)",
+          "oklch(35% 0.150 262)",
+          "oklch(45% 0.150 262)",
+          "oklch(55% 0.150 262)",
+          "oklch(65% 0.150 262)",
+          "oklch(80% 0.150 262)",
+          "oklch(95% 0.075 262)"
+        ]
+      },
+      "surface-dark": {
+        "role": "neutral",
+        "displayName": "Surface (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "well-dark": {
+        "role": "neutral",
+        "displayName": "Well (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Ink (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "text-dark": {
+        "role": "neutral",
+        "displayName": "Text (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "muted-dark": {
+        "role": "neutral",
+        "displayName": "Muted (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "line-dark": {
+        "role": "neutral",
+        "displayName": "Hairline (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "bar-dark": {
+        "role": "neutral",
+        "displayName": "Bar (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "accent-dark": {
+        "role": "primary",
+        "displayName": "Icon Teal (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.045 185)",
+          "oklch(25% 0.090 185)",
+          "oklch(35% 0.090 185)",
+          "oklch(45% 0.090 185)",
+          "oklch(55% 0.090 185)",
+          "oklch(65% 0.090 185)",
+          "oklch(80% 0.090 185)",
+          "oklch(95% 0.045 185)"
+        ]
+      },
+      "accent-ink-dark": {
+        "role": "primary",
+        "displayName": "Teal Ink (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.045 185)",
+          "oklch(25% 0.090 185)",
+          "oklch(35% 0.090 185)",
+          "oklch(45% 0.090 185)",
+          "oklch(55% 0.090 185)",
+          "oklch(65% 0.090 185)",
+          "oklch(80% 0.090 185)",
+          "oklch(95% 0.045 185)"
+        ]
+      },
+      "focus-dark": {
+        "role": "neutral",
+        "displayName": "Focus Blue (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.075 262)",
+          "oklch(25% 0.150 262)",
+          "oklch(35% 0.150 262)",
+          "oklch(45% 0.150 262)",
+          "oklch(55% 0.150 262)",
+          "oklch(65% 0.150 262)",
+          "oklch(80% 0.150 262)",
+          "oklch(95% 0.075 262)"
+        ]
+      },
+      "scrim": {
+        "role": "neutral",
+        "displayName": "Frosted Scrim",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "scrim-muted": {
+        "role": "neutral",
+        "displayName": "Scrim Muted",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "scrim-line": {
+        "role": "neutral",
+        "displayName": "Scrim Line",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "scrim-edge": {
+        "role": "neutral",
+        "displayName": "Scrim Edge",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "scrim-dark": {
+        "role": "neutral",
+        "displayName": "Frosted Scrim (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "scrim-muted-dark": {
+        "role": "neutral",
+        "displayName": "Scrim Muted (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "scrim-line-dark": {
+        "role": "neutral",
+        "displayName": "Scrim Line (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      },
+      "scrim-edge-dark": {
+        "role": "neutral",
+        "displayName": "Scrim Edge (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.004 285)",
+          "oklch(25% 0.008 285)",
+          "oklch(35% 0.008 285)",
+          "oklch(45% 0.008 285)",
+          "oklch(55% 0.008 285)",
+          "oklch(65% 0.008 285)",
+          "oklch(80% 0.008 285)",
+          "oklch(95% 0.004 285)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Overlay dollar figure only."
+      },
+      "display-compact": {
+        "displayName": "Display Compact",
+        "purpose": "Overlay figure on hosts 220px wide or narrower."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Panel lead fact."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Rows, impact line, overlay dry line."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section headings."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Sublines, section meta, hints, notice, footer, Show anyway."
+      }
+    },
+    "shadows": [
+      {
+        "name": "switch-thumb",
+        "value": "0 1px 2px rgb(0 0 0 / 0.2)",
+        "purpose": "The only shadow: the switch thumb."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Switch thumb, overlay fade, blur, button press."
+      },
+      {
+        "name": "duration-state",
+        "value": "150ms",
+        "purpose": "Switch, bar fill, off-state fade, press scale."
+      },
+      {
+        "name": "duration-overlay",
+        "value": "500ms",
+        "purpose": "Overlay opacity fade-in and blur ease-in; deliberately unhurried, per owner."
+      },
+      {
+        "name": "press-scale",
+        "value": "0.96",
+        "purpose": "Show anyway :active, only when motion is allowed."
+      },
+      {
+        "name": "content-blur",
+        "value": "blur(14px)",
+        "purpose": "Blurred host content under the scrim."
+      },
+      {
+        "name": "off-opacity",
+        "value": "0.55",
+        "purpose": "Block list, breakdown and impact when blocking is off."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "panel-min",
+        "value": "280px"
+      },
+      {
+        "name": "overlay-compact (container query)",
+        "value": "220px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Switch",
+      "kind": "custom",
+      "refersTo": "switch",
+      "description": "Chrome-style on/off for blocking; accent when on.",
+      "html": "<label class=\"ds-switch\"><span>On</span><input type=\"checkbox\" role=\"switch\" checked aria-label=\"Blocking\"></label>",
+      "css": ".ds-switch{--surface:#fff;--well:#f6f6f7;--ink:#1b1b1f;--text:#2e2e33;--muted:#6b6b75;--line:#e5e5e8;--track:#ececef;--bar:#c2c2c8;--accent:#0a5651;--focus:#0b57d0;display:inline-flex;align-items:center;gap:8px;color:var(--muted);font:12px/1.45 system-ui,-apple-system,\"Segoe UI\",sans-serif;cursor:pointer}.ds-switch input{appearance:none;position:relative;margin:0;width:28px;height:16px;border-radius:999px;background:#8a8a94;cursor:pointer;transition:background-color 150ms ease}.ds-switch input::before{content:\"\";position:absolute;top:2px;left:2px;width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgb(0 0 0 / .2);transition:transform 150ms cubic-bezier(0.23, 1, 0.32, 1)}.ds-switch input:checked{background:var(--accent)}.ds-switch input:checked::before{transform:translateX(12px)}.ds-switch input:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:999px}"
+    },
+    {
+      "name": "Block row",
+      "kind": "custom",
+      "refersTo": "block-row",
+      "description": "Flat 32px checkbox row: group and amount; ink when checked.",
+      "html": "<ul class=\"ds-list\"><li><label class=\"ds-row\"><input type=\"checkbox\" checked><span class=\"ds-name\">Food</span><span class=\"ds-amt\">$428</span></label></li><li><label class=\"ds-row\"><input type=\"checkbox\"><span class=\"ds-name\">Shopping</span><span class=\"ds-amt\">$74</span></label></li></ul>",
+      "css": ".ds-list{--surface:#fff;--well:#f6f6f7;--ink:#1b1b1f;--text:#2e2e33;--muted:#6b6b75;--line:#e5e5e8;--track:#ececef;--bar:#c2c2c8;--accent:#0a5651;--focus:#0b57d0;list-style:none;margin:0;padding:0;font:13px/1.45 system-ui,-apple-system,\"Segoe UI\",sans-serif}.ds-list li{border-bottom:1px solid var(--line)}.ds-row{display:flex;align-items:center;gap:10px;min-height:32px;cursor:pointer;color:var(--text)}.ds-row input{width:14px;height:14px;margin:0;accent-color:var(--accent);cursor:pointer}.ds-name{flex:1}.ds-amt{color:var(--muted);font-variant-numeric:tabular-nums}.ds-row input:checked~.ds-name{color:var(--ink);font-weight:500}.ds-row input:checked~.ds-amt{color:var(--ink)}.ds-row:hover{background:var(--well);margin:0 -8px;padding:0 8px;border-radius:6px}.ds-row input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}"
+    },
+    {
+      "name": "Breakdown row",
+      "kind": "custom",
+      "refersTo": "breakdown-fill",
+      "description": "Category, amount, 3px bar; accent fill when its group is blocked.",
+      "html": "<ul class=\"ds-bars\"><li class=\"is-blocked\"><span>Food Delivery Apps</span><span class=\"ds-amt\">$352</span><span class=\"ds-track\"><span class=\"ds-fill\" style=\"width:100%\"></span></span></li><li><span>Online Retail Shopping</span><span class=\"ds-amt\">$74</span><span class=\"ds-track\"><span class=\"ds-fill\" style=\"width:21%\"></span></span></li></ul>",
+      "css": ".ds-bars{--surface:#fff;--well:#f6f6f7;--ink:#1b1b1f;--text:#2e2e33;--muted:#6b6b75;--line:#e5e5e8;--track:#ececef;--bar:#c2c2c8;--accent:#0a5651;--focus:#0b57d0;list-style:none;margin:0;padding:0;font:13px/1.45 system-ui,-apple-system,\"Segoe UI\",sans-serif;color:var(--text)}.ds-bars li{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:7px 0 8px;border-bottom:1px solid var(--line)}.ds-amt{color:var(--muted);font-variant-numeric:tabular-nums}.ds-track{grid-column:1/-1;height:3px;background:var(--track);border-radius:2px;overflow:hidden}.ds-fill{display:block;height:100%;background:var(--bar);transition:background-color 150ms ease}.is-blocked,.is-blocked .ds-amt{color:var(--ink)}.is-blocked .ds-fill{background:var(--accent)}"
+    },
+    {
+      "name": "Section header",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "12px semibold heading, muted meta right, hairline below.",
+      "html": "<div class=\"ds-sec\"><h2>Block</h2><span>1 of 3</span></div>",
+      "css": ".ds-sec{--surface:#fff;--well:#f6f6f7;--ink:#1b1b1f;--text:#2e2e33;--muted:#6b6b75;--line:#e5e5e8;--track:#ececef;--bar:#c2c2c8;--accent:#0a5651;--focus:#0b57d0;display:flex;align-items:baseline;justify-content:space-between;padding-bottom:6px;border-bottom:1px solid var(--line);font:12px/1.45 system-ui,-apple-system,\"Segoe UI\",sans-serif;color:var(--muted);font-variant-numeric:tabular-nums}.ds-sec h2{margin:0;color:var(--ink);font-size:12px;font-weight:600}"
+    },
+    {
+      "name": "Lead fact",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "The panel's one fact at 22px with a muted plain-sentence subline.",
+      "html": "<div class=\"ds-lead\"><p class=\"ds-fact\">$428 on food</p><p class=\"ds-sub\">23 purchases in the last 30 days</p></div>",
+      "css": ".ds-lead{--surface:#fff;--well:#f6f6f7;--ink:#1b1b1f;--text:#2e2e33;--muted:#6b6b75;--line:#e5e5e8;--track:#ececef;--bar:#c2c2c8;--accent:#0a5651;--focus:#0b57d0;font-family:system-ui,-apple-system,\"Segoe UI\",sans-serif}.ds-fact{margin:0;color:var(--ink);font-size:22px;font-weight:600;line-height:1.2;letter-spacing:-.01em;font-variant-numeric:tabular-nums;text-wrap:balance}.ds-sub{margin:2px 0 0;color:var(--muted);font-size:12px;line-height:1.45}"
+    },
+    {
+      "name": "Sample-data notice",
+      "kind": "card",
+      "refersTo": "notice",
+      "description": "Well-toned status line shown only on built-in sample data.",
+      "html": "<p class=\"ds-notice\" role=\"status\">This is sample spending. Start the Impulse backend to see yours.</p>",
+      "css": ".ds-notice{--surface:#fff;--well:#f6f6f7;--ink:#1b1b1f;--text:#2e2e33;--muted:#6b6b75;--line:#e5e5e8;--track:#ececef;--bar:#c2c2c8;--accent:#0a5651;--focus:#0b57d0;margin:0;padding:8px 10px;border-radius:8px;background:var(--well);color:var(--ink);font:12px/1.45 system-ui,-apple-system,\"Segoe UI\",sans-serif}"
+    },
+    {
+      "name": "Friction overlay with Show anyway",
+      "kind": "button",
+      "refersTo": "show-anyway",
+      "description": "Frosted scrim, number at display size, one dry line, a monochrome way out.",
+      "html": "<div class=\"ds-ov\" role=\"group\" aria-label=\"Impulse hid food content\"><p class=\"ds-num\">$428</p><p class=\"ds-text\"><span>spent on food in the last 30 days</span><span class=\"ds-ask\">Still want to see this?</span></p><button type=\"button\" class=\"ds-btn\">Show anyway</button></div>",
+      "css": ".ds-ov{--s:rgba(250,250,251,.84);--i:#1b1b1f;--m:#4f4f58;--l:#d6d6db;--e:#b9b9c0;--f:#0b57d0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:16px;min-height:200px;background:var(--s);color:var(--i);font:400 13px/1.45 system-ui,-apple-system,\"Segoe UI\",sans-serif;text-align:center}@media (prefers-color-scheme:dark){.ds-ov{--s:rgba(24,24,27,.82);--i:#f2f2f4;--m:#b4b4bd;--l:#45454d;--e:#5c5c66;--f:#8ab4f8}}.ds-num{margin:0;font:600 20px/1.2 system-ui,-apple-system,\"Segoe UI\",sans-serif;letter-spacing:-.02em;font-variant-numeric:tabular-nums}.ds-text{margin:0;max-width:30em;color:var(--m);text-wrap:balance}.ds-text span{display:block}.ds-ask{margin-top:2px}.ds-btn{all:unset;margin-top:8px;cursor:pointer;padding:5px 14px;border-radius:6px;border:1px solid var(--l);border-bottom:2px solid var(--e);background:transparent;color:var(--m);font:400 12px/1.2 system-ui,-apple-system,\"Segoe UI\",sans-serif;transition:scale 150ms cubic-bezier(0.23, 1, 0.32, 1)}.ds-btn:hover{color:var(--i);border-bottom-color:var(--m)}.ds-btn:active{scale:.96}.ds-btn:focus-visible{outline:2px solid var(--f);outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Browser Chrome, Tuned",
+    "overview": "Impulse looks like it shipped with the browser. The side panel uses Chrome's own side-panel language: the system font at 13px, one neutral gray scale, 1px hairlines, flat 32px list rows, and Linear-level care with density and numbers. There is no themed world, no brand illustration, and no card grid. Chrome's side-panel header already shows the product name and icon, so the panel itself has no title.\n\nThe overlay is a calm friction screen in the style of Opal and one sec. A frosted neutral scrim covers the blurred post. On it sit one number at display size, one dry line of plain sentences, and a quiet \"Show anyway\" that is meant to feel like a small cost. It uses the same type stack and gray scale as the panel, so both surfaces read as one system even though one lives inside third-party pages.\n\nLight and dark follow `prefers-color-scheme` on both surfaces. Motion is limited to state changes (150ms) and a deliberately slow 500ms fade when a post gets blurred.",
+    "keyCharacteristics": [
+      "System UI type, 13px base, tabular figures for every number.",
+      "One neutral scale plus one accent, the icon teal, used only for selection and the switch.",
+      "Hairlines and flat rows instead of cards and shadows.",
+      "A single lead fact per surface, stated in plain sentences.",
+      "The overlay is the same in every host: namespaced, contained, and quiet."
+    ],
+    "rules": [
+      {
+        "name": "The One Accent Rule",
+        "body": "Teal means \"you chose to block this.\" It marks selection and the on state, nothing else. No second accent, no teal on the overlay.",
+        "section": "colors"
+      },
+      {
+        "name": "The Monochrome Exit Rule",
+        "body": "\"Show anyway\" uses only scrim grays. It never gets the accent, a fill, or any color that invites a click.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Every amount and count uses tabular numerals so columns and live updates do not shift.",
+        "section": "typography"
+      },
+      {
+        "name": "The Plain Sentence Rule",
+        "body": "Copy is plain sentences. No fragments separated by periods, no late-night count in the panel, no estimate blurb. The estimate is labeled with the words \"est. saved\" right next to its figure.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "Separate things with a 1px hairline or a well tone. Don't use cards, borders on all four sides, or shadows to group.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Contained Overlay Rule",
+        "body": "The overlay lives inside each blurred host's stacking context. Every overlay class is `ss-` prefixed, starts from `all: initial`/`all: unset`, and uses `!important`, so host pages are never affected.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** use the system font stack at 13px with tabular figures for every number.",
+      "**Do** keep the icon teal for selection and the on state only.",
+      "**Do** separate content with 1px hairlines and flat 32px rows.",
+      "**Do** lead each surface with one fact in plain sentences, and label estimates with \"est. saved.\"",
+      "**Do** follow `prefers-color-scheme` on both panel and overlay, using the paired dark tokens.",
+      "**Do** cap blocked groups at 3 and show the count in the Block header.",
+      "**Do** fade overlays and blur in over 500ms. Use 150ms for state changes.",
+      "**Do** prefix every overlay class with `ss-` and keep it inside the host's stacking context."
+    ],
+    "donts": [
+      "**Don't** add an \"Impulse\" heading inside the panel. Chrome's side-panel header already shows the name and icon.",
+      "**Don't** give \"Show anyway\" color, a fill, a shadow, or a primary-button look.",
+      "**Don't** use cards, metric tiles or a hero-metric layout. Impact stays on one inline line.",
+      "**Don't** write period-separated fragments, a late-night count, or an estimate blurb in the panel.",
+      "**Don't** add a second accent or a themed palette. The icon's colors are not binding for the UI.",
+      "**Don't** show sample data without the notice and the \"Sample data\" label."
+    ]
+  }
+}

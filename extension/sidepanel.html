@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Impulse</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <p id="notice" class="notice" role="status" hidden></p>
+
+  <section class="lead" aria-label="What you are blocking">
+    <div>
+      <p id="lead" class="lead-fact">Loading...</p>
+      <p id="lead-sub" class="lead-sub"></p>
+    </div>
+    <label class="switch">
+      <span id="state">On</span>
+      <input type="checkbox" role="switch" id="enabled" aria-label="Blocking">
+    </label>
+  </section>
+
+  <section aria-labelledby="block-h">
+    <div class="sec"><h2 id="block-h">Block</h2><span id="count" class="sec-meta"></span></div>
+    <ul id="groups" class="list groups"><li class="empty">Loading...</li></ul>
+    <p id="limit" class="hint" role="status"></p>
+  </section>
+
+  <section aria-labelledby="month-h">
+    <div class="sec"><h2 id="month-h">Last 30 days</h2><span id="source" class="sec-meta"></span></div>
+    <ul id="bars" class="list bars"><li class="empty">Loading...</li></ul>
+  </section>
+
+  <section aria-labelledby="impact-h">
+    <div class="sec"><h2 id="impact-h">This month</h2></div>
+    <p class="impact"><span><b id="blocked">0</b> blocked</span> <span aria-hidden="true">&middot;</span> <span><b id="shown">0</b> shown anyway</span> <span aria-hidden="true">&middot;</span> <span><b id="saved">-</b> est. saved</span></p>
+  </section>
+
+  <footer>Prototype on sandbox data. Not financial advice.</footer>
+  <script src="sidepanel.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "impulse-backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env --env-file-if-exists=../.env.local server.js",
+    "migrate": "node --env-file-if-exists=../.env.local migrate.js",
+    "test": "node categories.js"
+  },
+  "dependencies": {
+    "pg": "^8.23.1"
+  }
+}

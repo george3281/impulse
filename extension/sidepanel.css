@@ -1,0 +1,87 @@
+/* Impulse side panel: the category standard at full craft. Reads like Chrome's own side panel, tuned like Linear.
+   One neutral scale, hairlines, flat 32px list rows; the icon teal is the only accent (selection + switch). */
+:root {
+  --surface: #fff; --well: #f6f6f7; --ink: #1b1b1f; --text: #2e2e33; --muted: #6b6b75; /* 5.1:1 on white */
+  --line: #e5e5e8; --track: #ececef; --bar: #c2c2c8;
+  --accent: #0a5651; --accent-ink: #fff; --focus: #0b57d0;
+  --radius: 8px; --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #1f1f23; --well: #28282d; --ink: #f2f2f4; --text: #dcdce0; --muted: #a0a0aa;
+    --line: #34343a; --track: #34343a; --bar: #5c5c66; --accent: #5fc8bf; --accent-ink: #0d1f1d; --focus: #8ab4f8;
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { overscroll-behavior: contain; }
+html { scrollbar-color: var(--bar) transparent; scrollbar-width: thin; }
+::selection { background: color-mix(in srgb, var(--accent) 22%, transparent); }
+body {
+  min-width: 280px; padding: 16px 16px 20px;
+  background: var(--surface); color: var(--text);
+  font: 13px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+
+/* Notices */
+.notice { margin-bottom: 12px; padding: 8px 10px; border-radius: var(--radius); background: var(--well); color: var(--ink); font-size: 12px; }
+
+/* Lead: the one fact, switch on the same row */
+.lead { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding-top: 4px; } /* section rhythm (18px) supplies the gap below */
+.lead-fact { color: var(--ink); font-size: 22px; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; text-wrap: balance; }
+.lead-sub { margin-top: 2px; color: var(--muted); font-size: 12px; text-wrap: pretty; }
+.switch { display: flex; align-items: center; gap: 8px; padding-top: 4px; color: var(--muted); font-size: 12px; cursor: pointer; flex: none; }
+.switch input {
+  appearance: none; position: relative; flex: none; cursor: pointer;
+  width: 28px; height: 16px; border-radius: 999px; background: #8a8a94; /* off: 3.3:1 on white */
+  transition: background-color 150ms ease;
+}
+.switch input::before {
+  content: ""; position: absolute; top: 2px; left: 2px; width: 12px; height: 12px; border-radius: 50%;
+  background: #fff; box-shadow: 0 1px 2px rgb(0 0 0 / 0.2); transition: transform 150ms var(--ease-out);
+}
+.switch input:checked { background: var(--accent); }
+.switch input:checked::before { transform: translateX(12px); }
+
+/* Sections */
+section + section { margin-top: 18px; }
+.sec { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+h2 { color: var(--ink); font-size: 12px; font-weight: 600; }
+.sec-meta { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.hint { margin-top: 8px; color: var(--muted); font-size: 12px; }
+.hint:empty { display: none; }
+
+/* Flat list rows, Linear density */
+.list { list-style: none; }
+.list li { border-bottom: 1px solid var(--line); }
+.empty { padding: 10px 0; color: var(--muted); }
+.groups label { display: flex; align-items: center; gap: 10px; min-height: 32px; cursor: pointer; color: var(--text); }
+.groups input { width: 14px; height: 14px; margin: 0; flex: none; accent-color: var(--accent); cursor: pointer; }
+.groups .name { flex: 1; }
+.groups .amt { color: var(--muted); font-variant-numeric: tabular-nums; }
+.groups input:checked ~ .name { color: var(--ink); font-weight: 500; }
+.groups input:checked ~ .amt { color: var(--ink); }
+.groups label:has(input:disabled) { cursor: not-allowed; color: var(--muted); }
+@media (hover: hover) { .groups label:hover { background: var(--well); margin: 0 -8px; padding: 0 8px; border-radius: 6px; } }
+
+.bars li { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 7px 0 8px; }
+.bars .name { color: var(--text); }
+.bars .amt { color: var(--muted); font-variant-numeric: tabular-nums; }
+.track { grid-column: 1 / -1; height: 3px; background: var(--track); border-radius: 2px; overflow: hidden; }
+.fill { display: block; height: 100%; background: var(--bar); transition: background-color 150ms ease; }
+.bars .is-blocked .name, .bars .is-blocked .amt { color: var(--ink); }
+.bars .is-blocked .fill { background: var(--accent); }
+
+/* Impact: one inline line of figures, not tiles */
+.impact { padding-top: 10px; color: var(--muted); font-size: 13px; text-wrap: pretty; }
+.impact > span { white-space: nowrap; } /* a figure never splits from its label */
+.impact b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+footer { margin-top: 24px; color: var(--muted); font-size: 12px; }
+
+/* Blocking off: choices stay editable but read as inactive */
+.is-off .groups, .is-off .bars, .is-off .impact { opacity: 0.55; transition: opacity 150ms ease; }
+
+@media (prefers-reduced-motion: reduce) { .switch input::before { transition: none; } }

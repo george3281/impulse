@@ -1,0 +1,12 @@
+{
+  "name": "impulse",
+  "private": true,
+  "scripts": {
+    "build": "node --check backend/server.js && node --check backend/db.js && node --check backend/migrate.js && node --check extension/background.js && node --check extension/content.js && node --check extension/sidepanel.js && node -e \"JSON.parse(require('fs').readFileSync('extension/manifest.json','utf8'))\" && cd backend && node categories.js && node discover.js",
+    "migrate": "npm --prefix backend run migrate",
+    "start": "npm --prefix backend start"
+  },
+  "dependencies": {
+    "@neon/config": "^1.14.0"
+  }
+}
