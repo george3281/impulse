@@ -1,6 +1,6 @@
 # Impulse
 
-A Chrome extension that blurs ads and posts pushing you to overspend, and shows what you've already spent in that category this month.
+A Chrome extension that reads your real spending and blocks content built to make you buy more, and shows what you've already spent in that category this month.
 
 Built at HackUMass 2026. Prototype on Capital One's Nessie sandbox data, not financial advice.
 
