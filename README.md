@@ -2,7 +2,7 @@
 
 A Chrome extension that reads your real spending and blocks content built to make you buy more, and shows what you've already spent in that category this month.
 
-Built at HackUMass 2026. Prototype on Capital One's Nessie sandbox data.
+Built at HackUMass 2026 ([Devpost](https://devpost.com/software/impulse-ecjbah)). Prototype on Capital One's Nessie mock data.
 
 ## Getting Started
 
@@ -51,7 +51,7 @@ There's also an offline demo page in `extension/demo/`. Serve it with `python3 -
 
 ## Database
 
-Impulse can save its categories and a log of blocks to Neon Postgres. This is optional; everything else works without it.
+Impulse can save its spending categories to Neon Postgres, so it doesn't have to ask Gemini again on every restart. This is optional; everything else works without it.
 
 ```bash
 npm i -g neon
@@ -64,7 +64,7 @@ npm run migrate
 - **Capital One Nessie** provides the purchases.
 - **Gemini** sorts your merchants into spending categories.
 - **Jev** (TypeSafe AI) decides which posts on the page are trying to make you buy something.
-- **Neon Postgres** stores the categories and every block.
+- **Neon Postgres** stores the categories.
 
 API keys stay in the backend and are never sent to the extension.
 

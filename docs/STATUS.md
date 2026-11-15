@@ -13,7 +13,7 @@
 - YouTube verified live (signed out): "mukbang" search 31/32 blurred, "easy burger recipe" 0/40 blurred, Shorts non-food not blurred.
 - TikTok + Instagram/Reels: selectors added (TikTok data-e2e feed/search items; Instagram `main article`; on both, each <video> climbs to its own post/reel container). NOT verified: headless gets TikTok's error page and Instagram's login wall. Test signed in.
 - Blurred videos are paused and kept paused.
-- Neon Postgres: taxonomy persisted, blocked/shown events logged (`GET /stats`).
+- Neon Postgres: taxonomy persisted.
 - Gemini free tier now returns 429 (quota); keyword fallback handles classification.
 
 ## Mocked / untested

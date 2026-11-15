@@ -17,7 +17,10 @@
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
+        "*://*.youtube.com/*",
+        "*://*.tiktok.com/*",
+        "*://*.instagram.com/*",
+        "http://localhost:8000/*"
       ],
       "js": [
         "content.js"

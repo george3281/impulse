@@ -20,7 +20,7 @@ Impulse is a Chrome extension that reads your real spending, finds where you ove
 - **You choose what to block.** The side panel shows your last 30 days. Your top category is blocked by default, and you can block up to 3 groups.
 - **Blurs what tempts you.** On YouTube, TikTok and Instagram, Impulse finds ads and posts made to make you buy: mukbangs and food challenges, shopping hauls and unboxings, skins, item shops and loot openings. It blurs them with one fact on top: *"$582 spent on shopping in the last 30 days. Still want to see this?"*
 - **Blocks ways to buy, not interests.** Recipes, tutorials, building guides and normal posts stay visible. A Fortnite item-shop video gets blurred; a Fortnite building tutorial doesn't.
-- **Friction, not prison.** Every blur has a quiet "Show anyway" button that always works. Every block and every reveal is logged.
+- **Friction, not prison.** Every blur has a quiet "Show anyway" button that always works.
 - **An honest savings estimate.** We count at most one avoided purchase per day that you were blocked and didn't click "Show anyway", times your average order in the blocked groups, and never more than you actually spent:
 
 $$\text{est. saved} = \min\left(d \cdot \bar{o},\ S\right)$$
@@ -36,7 +36,7 @@ The same feed looks different for different people. With our food-heavy persona,
 - **Gemini:** discovers each user's specific spending categories from their merchants, and places new merchants into those categories.
 - **Jev (TypeSafe AI):** classifies every post on the page. For each one it answers two typed questions: which spending group it belongs to, and whether it's an ad, craving content, educational, or unrelated. A batch takes about 0.2 seconds.
 - **Keyword fallback:** if an AI service is slow or down, a keyword and domain matcher keeps the extension working.
-- **Neon Postgres:** stores the discovered categories and logs every block and "Show anyway".
+- **Neon Postgres:** stores the discovered categories so Gemini isn't called on every restart.
 - **Backend:** a small zero-dependency Node server that proxies Nessie, Gemini and Jev, so no API keys ever ship inside the extension.
 - **Design:** we went through several directions and landed on something that feels native to Chrome: a calm side panel and a one-fact overlay with a deliberately unattractive "Show anyway" button.
 

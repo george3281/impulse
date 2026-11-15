@@ -21,11 +21,6 @@ export async function saveTaxonomy(accountId, data) {
     [accountId, data]);
 }
 
-export async function logEvent(type, category) {
-  if (!pool) return;
-  await pool.query('INSERT INTO events (type, category) VALUES ($1, $2)', [type, category]);
-}
-
 export async function ping() {
   if (!pool) return false;
   await pool.query('SELECT 1');

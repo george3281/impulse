@@ -20,10 +20,10 @@ Friction built from the user's own money, not a time or app blocker. The overlay
 
 ## Operating Context
 
-- Runs on YouTube, TikTok (feed, viewer, search, DMs), Instagram (feed, explore, reels) and any page with ads.
+- Runs on YouTube, TikTok (feed, viewer, search, DMs), Instagram (feed, explore, reels) only.
 - Chrome side panel: shows spending by category, lets the user pick up to 3 groups to block, a master on/off, and counters (blocked, shown anyway, estimated money saved).
 - Overlay: sits on top of third-party pages inside each blurred post, at every size from a 150px thumbnail to a full video player.
-- Spending comes from Capital One's Nessie sandbox; categories are discovered by Gemini; page content is classified by Jev (TypeSafe AI) with a keyword fallback; events are stored in Neon Postgres.
+- Spending comes from Capital One's Nessie sandbox; categories are discovered by Gemini; page content is classified by Jev (TypeSafe AI) with a keyword fallback; categories are stored in Neon Postgres.
 
 ## Capabilities and Constraints
 

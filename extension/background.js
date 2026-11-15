@@ -75,8 +75,8 @@ async function classify(items) {
 
 // Counters reset when the month changes. Bumps are chained so concurrent messages don't lose increments.
 let chain = Promise.resolve();
-const bump = (key, group) => (chain = chain.then(() => bumpNow(key, group)).catch(() => {}));
-async function bumpNow(key, group) {
+const bump = (key) => (chain = chain.then(() => bumpNow(key)).catch(() => {}));
+async function bumpNow(key) {
   const month = new Date().toISOString().slice(0, 7);
   const s = await chrome.storage.local.get(['statsMonth', 'blockedThisMonth', 'shownAnyway', 'days']);
   if (s.statsMonth !== month) Object.assign(s, { statsMonth: month, blockedThisMonth: 0, shownAnyway: 0, days: {} });
@@ -87,13 +87,6 @@ async function bumpNow(key, group) {
   const d = ((s.days ??= {})[day] ??= { b: 0, s: 0 });
   if (key === 'shownAnyway') d.s++; else d.b++;
   await chrome.storage.local.set(s);
-  // Durable log in Postgres via the backend; local counters above keep working if it's down.
-  const { categories } = await chrome.storage.local.get('categories');
-  fetch(`${API}/events`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ type: key === 'shownAnyway' ? 'shown' : 'blocked', category: group ?? categories?.top ?? null }),
-  }).catch(() => {});
 }
 
 // Toolbar icon opens the side panel (docked, stays open while browsing) instead of a popup.
@@ -110,8 +103,8 @@ chrome.alarms.onAlarm.addListener((a) => a.name === 'refresh' && refreshCategori
 
 chrome.runtime.onMessage.addListener((msg, _sender, reply) => {
   if (msg.type === 'classify') classify(msg.items).then(reply);
-  else if (msg.type === 'blocked') bump('blockedThisMonth', msg.group).then(() => reply({ ok: true }));
-  else if (msg.type === 'shown') bump('shownAnyway', msg.group).then(() => reply({ ok: true }));
+  else if (msg.type === 'blocked') bump('blockedThisMonth').then(() => reply({ ok: true }));
+  else if (msg.type === 'shown') bump('shownAnyway').then(() => reply({ ok: true }));
   else if (msg.type === 'refresh') refreshCategories().then(reply);
   else return false;
   return true; // async reply

@@ -212,13 +212,6 @@ http.createServer(async (req, res) => {
     const url = new URL(req.url, 'http://x');
     const path = url.pathname;
     if (req.method === 'GET' && path === '/health') return send(200, { ok: true, nessie: Boolean(process.env.NESSIE_API_KEY) && await hasIds(), gemini: Boolean(process.env.GEMINI_API_KEY), db: await db.ping().catch(() => false) });
-    if (req.method === 'POST' && path === '/events') {
-      let body;
-      try { body = await readJson(req); } catch (e) { return send(400, { error: e.message }); }
-      if (!['blocked', 'shown'].includes(body?.type)) return send(400, { error: 'type must be blocked or shown' });
-      await db.logEvent(body.type, clip(body.category, 60) || null);
-      return send(200, { ok: true, stored: db.enabled });
-    }
     if (req.method === 'GET' && path === '/categories') return send(200, await getCategories(url.searchParams.has('rediscover')));
     if (req.method === 'POST' && path === '/classify') {
       let body;

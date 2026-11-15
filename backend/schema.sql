@@ -4,11 +4,3 @@ CREATE TABLE IF NOT EXISTS taxonomy (
   data       jsonb NOT NULL,            -- { source, categories: [...], merchants: { name: id } }
   updated_at timestamptz NOT NULL DEFAULT now()
 );
-
-CREATE TABLE IF NOT EXISTS events (
-  id         bigserial PRIMARY KEY,
-  type       text NOT NULL CHECK (type IN ('blocked', 'shown')),
-  category   text,
-  created_at timestamptz NOT NULL DEFAULT now()
-);
-CREATE INDEX IF NOT EXISTS events_created_at ON events (created_at);
